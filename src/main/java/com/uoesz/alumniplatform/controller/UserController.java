@@ -6,10 +6,8 @@ import com.uoesz.alumniplatform.utils.ResponseResult;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+
+import java.util.*;
 
 @Api(value = "UserController")
 @RestController
@@ -37,13 +35,11 @@ public class UserController {
 		List<User> list = new ArrayList<>();
 		User user1 = new User();
 		user1.setId(1l);
-		user1.setName("mrbird");
-		user1.setAge(25);
+		user1.setFirstName("mrbird");
+		user1.setBirthday(new Date());
 		list.add(user1);
 		User user2 = new User();
 		user2.setId(2l);
-		user2.setName("scott");
-		user2.setAge(29);
 		list.add(user2);
 		return list;
 	}
