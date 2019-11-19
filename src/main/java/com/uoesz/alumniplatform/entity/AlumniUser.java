@@ -44,10 +44,13 @@ public class AlumniUser implements Serializable {
     private String wechatId;
 
     @Column(name = "profile_photo")
-    private String status;
+    private String profilePhoto;
 
     @Column(name = "location")
     private String location;
+
+    @Column(name = "company")
+    private String company;
 
     @Column(name = "career")
     private String career;
@@ -66,6 +69,15 @@ public class AlumniUser implements Serializable {
 
     @Column(name = "programme")
     private String programme;
+
+    @Column(name = "status")
+    private String status;
+
+    @Column(name = "speciality")
+    private String speciality;
+
+    @Column(name = "interest")
+    private String interest;
 
     @Column(name = "update_date")
     private Date updateDate;
@@ -135,12 +147,12 @@ public class AlumniUser implements Serializable {
         this.wechatId = wechatId;
     }
 
-    public String getStatus() {
-        return status;
+    public String getProfilePhoto() {
+        return profilePhoto;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setProfilePhoto(String profilePhoto) {
+        this.profilePhoto = profilePhoto;
     }
 
     public String getLocation() {
@@ -197,6 +209,38 @@ public class AlumniUser implements Serializable {
 
     public void setProgramme(String programme) {
         this.programme = programme;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getSpeciality() {
+        return speciality;
+    }
+
+    public void setSpeciality(String speciality) {
+        this.speciality = speciality;
+    }
+
+    public String getInterest() {
+        return interest;
+    }
+
+    public void setInterest(String interest) {
+        this.interest = interest;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
     }
 
     public Date getUpdateDate() {

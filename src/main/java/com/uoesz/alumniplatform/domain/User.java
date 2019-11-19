@@ -37,6 +37,10 @@ public class User implements Serializable {
 
 	private String programme;
 
+	private String speciality;
+
+	private String interest;
+
 	public Long getId() {
 		return id;
 	}
@@ -155,5 +159,21 @@ public class User implements Serializable {
 
 	public void setProgramme(String programme) {
 		this.programme = programme;
+	}
+
+	public String getSpeciality() {
+		return speciality;
+	}
+
+	public void setSpeciality(String speciality) {
+		this.speciality = speciality;
+	}
+
+	public String getInterest() {
+		return interest;
+	}
+
+	public void setInterest(String interest) {
+		this.interest = interest;
 	}
 }
