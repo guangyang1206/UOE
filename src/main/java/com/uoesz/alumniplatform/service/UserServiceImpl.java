@@ -44,7 +44,7 @@ public class UserServiceImpl implements UserService {
         String phone = paramMap.get("phone");
         String gender = paramMap.get("gender");
         String birthday = paramMap.get("birthday");
-        Date dateBirthday = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy").parse(birthday);
+        Date dateBirthday = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'.000Z'").parse(birthday);
         String wechatId = paramMap.get("wechatId");
         String company = paramMap.get("company");
         String location = paramMap.get("location");
@@ -76,6 +76,7 @@ public class UserServiceImpl implements UserService {
             user.setProgramme(programme);
             user.setSpeciality(speciality);
             user.setInterest(interest);
+            user.setUpdateDate(new Date());
             userRepository.save(user);
         }
 

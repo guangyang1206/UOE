@@ -50,7 +50,7 @@ public class UserController {
         String phone = user.getPhone();
         String email = user.getEmail();
         String location = user.getLocation();
-        Date birthday = user.getBirthday();
+        String birthday = user.getBirthday();
         String wechatId = user.getWechatId();
         String company = user.getCompany();
         String career = user.getCareer();
